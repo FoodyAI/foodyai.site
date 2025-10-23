@@ -1,12 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Terms() {
   return (
     <div className="legal-page">
       <header className="header">
-        <Link href="/" className="logo">🍎 Foody</Link>
+        <Link href="/" className="logo">
+          <Image src="/logo.png" alt="Foody Logo" width={32} height={32} />
+          <span>Foody</span>
+        </Link>
       </header>
 
       <main className="legal-content">
@@ -189,11 +193,11 @@ export default function Terms() {
           <section>
             <h2>12. Contact Information</h2>
             <p>If you have questions about these Terms, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:support@foodyapp.com">support@foodyapp.com</a><br />
+            <p><strong>Email:</strong> <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a><br />
             <strong>Response Time:</strong> Within 48 hours</p>
 
             <p><strong>For legal inquiries:</strong><br />
-            Email: <a href="mailto:legal@foodyapp.com">legal@foodyapp.com</a></p>
+            Email: <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a></p>
           </section>
 
           <section>
@@ -220,13 +224,16 @@ export default function Terms() {
 
         .header {
           padding: 20px 40px;
-          border-bottom: 1px solid rgba(255, 107, 107, 0.2);
+          border-bottom: 1px solid rgba(52, 199, 89, 0.2);
         }
 
         .logo {
-          font-size: 24px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 22px;
           font-weight: 600;
-          color: #FF6B6B;
+          color: #34C759;
         }
 
         .legal-content {
@@ -240,20 +247,20 @@ export default function Terms() {
 
         h1 {
           font-size: 36px;
-          color: #FF6B6B;
+          color: #34C759;
           margin-bottom: 10px;
           text-align: center;
         }
 
         .last-updated {
-          background: rgba(255, 107, 107, 0.1);
-          border: 1px solid rgba(255, 107, 107, 0.3);
+          background: rgba(52, 199, 89, 0.1);
+          border: 1px solid rgba(52, 199, 89, 0.3);
           border-radius: 8px;
           padding: 12px 20px;
           display: inline-block;
           margin: 20px auto 40px;
           font-size: 14px;
-          color: #FF6B6B;
+          color: #34C759;
           display: block;
           text-align: center;
           max-width: fit-content;
@@ -275,7 +282,7 @@ export default function Terms() {
         }
 
         h2 {
-          color: #FF6B6B;
+          color: #34C759;
           font-size: 24px;
           margin-bottom: 15px;
           padding-top: 10px;
@@ -299,15 +306,15 @@ export default function Terms() {
         }
 
         .disclaimer {
-          background: rgba(255, 107, 107, 0.15);
-          border: 2px solid #FF6B6B;
+          background: rgba(255, 59, 48, 0.15);
+          border: 2px solid #FF3B30;
           border-radius: 12px;
           padding: 20px;
           margin: 20px 0;
         }
 
         .disclaimer strong {
-          color: #FF6B6B;
+          color: #FF3B30;
           display: block;
           margin-bottom: 10px;
           font-size: 18px;
@@ -315,7 +322,7 @@ export default function Terms() {
 
         .footer-note {
           background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 107, 107, 0.2);
+          border: 1px solid rgba(52, 199, 89, 0.2);
           border-radius: 12px;
           padding: 30px;
           text-align: center;
@@ -340,7 +347,7 @@ export default function Terms() {
         .page-footer {
           padding: 40px;
           text-align: center;
-          border-top: 1px solid rgba(255, 107, 107, 0.2);
+          border-top: 1px solid rgba(52, 199, 89, 0.2);
         }
 
         @media (max-width: 768px) {

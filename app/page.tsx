@@ -1,12 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="landing-page">
       <header className="header">
-        <div className="logo">🍎 Foody</div>
+        <div className="logo">
+          <Image src="/logo.png" alt="Foody Logo" width={40} height={40} />
+          <span>Foody</span>
+        </div>
       </header>
 
       <section className="hero">
@@ -84,7 +88,7 @@ export default function Home() {
           <div className="footer-section">
             <h4>Contact</h4>
             <p>
-              <a href="mailto:support@foodyapp.com">support@foodyapp.com</a>
+              <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a>
             </p>
           </div>
         </div>
@@ -100,19 +104,22 @@ export default function Home() {
 
         .header {
           padding: 20px 40px;
-          border-bottom: 1px solid rgba(255, 107, 107, 0.2);
+          border-bottom: 1px solid rgba(52, 199, 89, 0.2);
         }
 
         .logo {
+          display: flex;
+          align-items: center;
+          gap: 12px;
           font-size: 24px;
           font-weight: 600;
-          color: #FF6B6B;
+          color: #34C759;
         }
 
         .hero {
           padding: 80px 40px;
           text-align: center;
-          background: linear-gradient(180deg, rgba(255, 107, 107, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+          background: linear-gradient(180deg, rgba(52, 199, 89, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
         }
 
         .hero-content {
@@ -123,7 +130,7 @@ export default function Home() {
         .hero-title {
           font-size: 56px;
           font-weight: 700;
-          color: #FF6B6B;
+          color: #34C759;
           margin-bottom: 20px;
           line-height: 1.2;
         }
@@ -172,12 +179,12 @@ export default function Home() {
         }
 
         .btn-primary {
-          background-color: #FF6B6B;
+          background-color: #34C759;
           color: #000000;
         }
 
         .btn-primary:hover {
-          background-color: #ff5252;
+          background-color: #30D158;
           text-decoration: none;
           transform: translateY(-2px);
         }
@@ -185,11 +192,11 @@ export default function Home() {
         .btn-secondary {
           background-color: transparent;
           color: #ffffff;
-          border: 2px solid #FF6B6B;
+          border: 2px solid #34C759;
         }
 
         .btn-secondary:hover {
-          background-color: rgba(255, 107, 107, 0.1);
+          background-color: rgba(52, 199, 89, 0.1);
           text-decoration: none;
           transform: translateY(-2px);
         }
@@ -205,7 +212,7 @@ export default function Home() {
           font-size: 40px;
           text-align: center;
           margin-bottom: 60px;
-          color: #FF6B6B;
+          color: #34C759;
         }
 
         .features-grid {
@@ -218,21 +225,21 @@ export default function Home() {
           background: rgba(255, 255, 255, 0.05);
           padding: 40px;
           border-radius: 16px;
-          border: 1px solid rgba(255, 107, 107, 0.2);
+          border: 1px solid rgba(52, 199, 89, 0.2);
           text-align: center;
           transition: all 0.3s;
         }
 
         .feature-card:hover {
           transform: translateY(-5px);
-          border-color: rgba(255, 107, 107, 0.4);
+          border-color: rgba(52, 199, 89, 0.4);
           background: rgba(255, 255, 255, 0.08);
         }
 
         .feature-number {
           width: 60px;
           height: 60px;
-          background: #FF6B6B;
+          background: #34C759;
           color: #000000;
           border-radius: 50%;
           display: flex;
@@ -265,7 +272,7 @@ export default function Home() {
 
         .footer {
           background: rgba(255, 255, 255, 0.05);
-          border-top: 1px solid rgba(255, 107, 107, 0.2);
+          border-top: 1px solid rgba(52, 199, 89, 0.2);
           padding: 60px 40px 20px;
         }
 
@@ -279,7 +286,7 @@ export default function Home() {
         }
 
         .footer-section h4 {
-          color: #FF6B6B;
+          color: #34C759;
           margin-bottom: 15px;
           font-size: 18px;
         }
@@ -302,13 +309,13 @@ export default function Home() {
         }
 
         .footer-links a:hover {
-          color: #FF6B6B;
+          color: #34C759;
         }
 
         .footer-bottom {
           text-align: center;
           padding-top: 20px;
-          border-top: 1px solid rgba(255, 107, 107, 0.1);
+          border-top: 1px solid rgba(52, 199, 89, 0.1);
           color: rgba(255, 255, 255, 0.5);
         }
 

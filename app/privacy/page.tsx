@@ -1,12 +1,16 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Privacy() {
   return (
     <div className="legal-page">
       <header className="header">
-        <Link href="/" className="logo">🍎 Foody</Link>
+        <Link href="/" className="logo">
+          <Image src="/logo.png" alt="Foody Logo" width={32} height={32} />
+          <span>Foody</span>
+        </Link>
       </header>
 
       <main className="legal-content">
@@ -108,7 +112,7 @@ export default function Privacy() {
             </ul>
 
             <p><strong>4.3 How to Exercise Your Rights:</strong></p>
-            <p>To exercise any of these rights, please contact us at: <a href="mailto:support@foodyapp.com">support@foodyapp.com</a></p>
+            <p>To exercise any of these rights, please contact us at: <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a></p>
             <p>We will respond to your request within 30 days.</p>
           </section>
 
@@ -132,14 +136,14 @@ export default function Privacy() {
           <section>
             <h2>6. Contact Us</h2>
             <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
-            <p><strong>Email:</strong> <a href="mailto:support@foodyapp.com">support@foodyapp.com</a><br />
+            <p><strong>Email:</strong> <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a><br />
             <strong>Response Time:</strong> Within 48 hours</p>
 
             <p><strong>For GDPR-related inquiries (EU users):</strong><br />
-            Email: <a href="mailto:gdpr@foodyapp.com">gdpr@foodyapp.com</a></p>
+            Email: <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a></p>
 
             <p><strong>For CCPA-related inquiries (California users):</strong><br />
-            Email: <a href="mailto:privacy@foodyapp.com">privacy@foodyapp.com</a></p>
+            Email: <a href="mailto:youngdevs2025@gmail.com">youngdevs2025@gmail.com</a></p>
           </section>
 
           <div className="footer-note">
@@ -161,13 +165,16 @@ export default function Privacy() {
 
         .header {
           padding: 20px 40px;
-          border-bottom: 1px solid rgba(255, 107, 107, 0.2);
+          border-bottom: 1px solid rgba(52, 199, 89, 0.2);
         }
 
         .logo {
-          font-size: 24px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 22px;
           font-weight: 600;
-          color: #FF6B6B;
+          color: #34C759;
         }
 
         .legal-content {
@@ -181,20 +188,20 @@ export default function Privacy() {
 
         h1 {
           font-size: 36px;
-          color: #FF6B6B;
+          color: #34C759;
           margin-bottom: 10px;
           text-align: center;
         }
 
         .last-updated {
-          background: rgba(255, 107, 107, 0.1);
-          border: 1px solid rgba(255, 107, 107, 0.3);
+          background: rgba(52, 199, 89, 0.1);
+          border: 1px solid rgba(52, 199, 89, 0.3);
           border-radius: 8px;
           padding: 12px 20px;
           display: inline-block;
           margin: 20px auto 40px;
           font-size: 14px;
-          color: #FF6B6B;
+          color: #34C759;
           display: block;
           text-align: center;
           max-width: fit-content;
@@ -216,7 +223,7 @@ export default function Privacy() {
         }
 
         h2 {
-          color: #FF6B6B;
+          color: #34C759;
           font-size: 24px;
           margin-bottom: 15px;
           padding-top: 10px;
@@ -265,7 +272,7 @@ export default function Privacy() {
         .page-footer {
           padding: 40px;
           text-align: center;
-          border-top: 1px solid rgba(255, 107, 107, 0.2);
+          border-top: 1px solid rgba(52, 199, 89, 0.2);
         }
 
         @media (max-width: 768px) {
